@@ -1,0 +1,233 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+/* .container_header .container_footer {
+  background: #f5d7cd;
+} */
+
+.header, .footer {
+  padding: 38px 70px 48px 68px;
+  background: #f5d7cd;
+}
+
+/*выравнивает вертикальные блоки, 
+строки, в горизонтальные и по центрам*/
+.header_flex, .footer_flex, .about, .subscribe, 
+.plan_flex {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}  
+
+.nav_li {
+  display: inline-block;
+
+}
+/*псевдо класс, создает пробел между словами, 
+кроме первого слева-сначала списка*/
+.nav_li:not(:first-of-type) {
+  margin-left: 49px;
+}
+
+.nav_link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.468947px;
+  color: #696871;
+  text-decoration: none;
+}
+/*псевдо класс*/
+.nav_link:hover {
+  color: black;
+  transition: 300ms;
+}
+
+.button {
+  width: 212px;
+  height: 60px;
+  font-weight: 700; 
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.531474px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button_orange {
+  background: #ff7143;
+}
+
+.button_orange:hover {
+  background: #f1531e;
+  transition: 500ms;
+}
+
+.about{
+  margin: 105px auto 85px;
+}
+.about_title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 77px;
+  letter-spacing: -2.50105px;
+  color: #19191b;
+  max-width: 467px;
+  margin-bottom: 30px;
+}
+
+.about_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.625263px;
+  color: #696871;
+  max-width: 410px;
+  margin-bottom: 50px;
+}
+
+.button_violet {
+  background: #5454d4;
+
+}
+
+.button_transparent {
+  background: none;
+  color: #5454D4;
+  border: 1px solid #5454D4;
+  border-radius: 10px;
+  margin-left: 35px;
+
+}
+
+ .about_h2 {
+  width: 556px;
+  height: 57px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  letter-spacing: -1.56316px;
+  color: #19191B;
+  margin-bottom: 38px;
+} 
+
+.input {
+  width: 302px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid #5454D4;
+  padding-left: 14px;
+  box-sizing: border-box; /*помогает учитывать ширину и пайдинги*/
+  margin-right: 38px;
+}
+
+/*псевдо элемент*/
+.input::placeholder .input {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.531474px;
+color: #000000;
+}
+
+/*отключает псевдо класс. Чтобы при замене, толщина шрифта не менялась*/
+.input:focus {
+  outline: none;
+}
+
+.plan {
+  margin-bottom: 132px;
+}
+.plan_title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -1.87579px;
+  color: #19191B;
+  max-width: 504px; /*ширина блока*/
+  margin-bottom: 110px;
+}
+/*в блоке список*/
+.iten {
+width: 338px;
+background: #f8f8f8;
+border-radius: 10px;
+text-align: center; /*список по центру*/
+padding: 34px 0 27px;
+}
+
+.iten:hover {
+  transition: 500ms; /*замедляет движение мыши, плавно*/
+  background: #ff7143;
+  /*box-shadow - это тень*/
+  box-shadow: 2px 32px 34px rgba(255, 112, 59, 0.317827);
+}
+
+.iten_text {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.562737px;
+  color: #696871;
+  
+}
+/*если при наведении надо поменять цвет шрифта*/
+.iten:hover .iten_text, .iten:haver .iten_titel, 
+.iten:hover .iten_li {
+  color: white;
+  transition: 500ms;
+}
+
+.iten_titel {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 56px;
+  letter-spacing: -1.03448px;
+  color: #1D293F;
+  margin: 22px 0 28px;
+}
+
+.iten_titel span {
+  font-size: 28px; /*высота шрифта*/
+}
+
+.iten_li {
+  list-style: none; /*уберает точки перед списком*/
+  font-size: 17px;
+  line-height: 50px; /*высота шрифта*/
+  letter-spacing: -0.531474px;
+  color: #696871;
+}
+
+.button_iten {
+width: 285px;
+background: white;
+color: #5454d4;
+margin-top: 36px;
+}
+
+/*меняет при наведении мыши фон, 
+цвет шрифта, медленнее движ-ся мышь*/
+.iten:hover .button_iten {
+  background: #9f3919;
+  color: white;
+  transition: 500ms;
+}
+
+.subscribe {
+  margin-bottom: 85px;
+}
+
+
+
+
